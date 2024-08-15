@@ -1,12 +1,10 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 function App() {
   const [pepperoniIsChecked, setPepperoniIsChecked] = useState(false);
-
   function togglePepperoni(e) {
     setPepperoniIsChecked(e.target.checked);
   }
-
   return (
     <div>
       <h1>Select Pizza Toppings</h1>
@@ -18,7 +16,6 @@ function App() {
         onChange={togglePepperoni}
       />
       <label htmlFor="pepperoni">Add pepperoni</label>
-
       <h2>Your Toppings:</h2>
       <ul>
         <li>Cheese</li>
